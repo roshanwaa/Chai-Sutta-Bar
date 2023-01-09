@@ -1,6 +1,8 @@
-.main__title {
-  text-align: center;
+.main__title,
+.csb-logo {
+  font-family: 'Moon Dance', cursive;
 }
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
 #app {
   display: flex;
@@ -12,4 +14,30 @@
   align-items: center;
   background: #ff9966;
   background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.csb-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.c-font {
+  color: #357c3c;
+}
+
+.b-font {
+  color: #ff6464;
+}
+
+.branch-csb {
+  padding-left: 5px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #674747;
+  font-size: 15px;
 }
