@@ -3,9 +3,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import * as dynamics from 'https://cdn.skypack.dev/dynamics.js@1.1.5';
 import './Navbar.css';
+
 const navbarStyle = {
-  width: 75,
-  height: 600,
+  width: 70,
+  height: 7000,
 };
 const routesList = ['home', 'menu', 'about', 'contact'];
 
@@ -136,7 +137,7 @@ export const Navbar = () => {
       </ul>
       <svg className="navbar__background" height="100%">
         <path
-          fill="#243763"
+          fill="#144272"
           d={svgPath(navbarStyle, verticalPosition.y, bubble)}
         />
       </svg>

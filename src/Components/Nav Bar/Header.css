@@ -1,13 +1,13 @@
 .container {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 80%;
-    height: 80%;
-    max-width: 300px;
-    max-height: 500px;
-    min-height: 400px;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    background: white;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 95%;
+  height: 90%;
+  max-width: auto;
+  max-height: auto;
+  min-height: 100px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
 }
