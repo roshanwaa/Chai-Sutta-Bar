@@ -6,7 +6,6 @@ export const Contact = () => {
       <h2 className="title">Contact</h2>
       <div className="box-placeholder small"></div>
       <div className="box-placeholder"></div>
-      <div className="box-placeholder"></div>
     </div>
   );
 };

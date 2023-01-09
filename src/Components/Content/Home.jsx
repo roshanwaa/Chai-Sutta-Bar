@@ -7,6 +7,7 @@ export const Home = () => {
       <div className="box-placeholder small"></div>
       <div className="box-placeholder"></div>
       <div className="box-placeholder"></div>
+      <div className="box-placeholder"></div>
     </div>
   );
 };

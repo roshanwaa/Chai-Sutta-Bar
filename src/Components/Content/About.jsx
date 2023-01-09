@@ -7,7 +7,6 @@ export const About = () => {
       <div className="box-placeholder small"></div>
       <div className="box-placeholder"></div>
       <div className="box-placeholder"></div>
-      <div className="box-placeholder"></div>
     </div>
   );
 };

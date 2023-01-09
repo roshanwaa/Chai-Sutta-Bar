@@ -18,25 +18,30 @@ const initialBubbleConfig = {
 };
 
 const svgPath = (navbar, startingPoint, bubble) => {
+  const navbarWidth = navbar.width;
+  const bubbleWidth = bubble.width;
+  const bubbleHeight = bubble.height;
+  const navbarHeight = navbar.height;
+  const bubbleMiddleCurve = bubble.middleCurve;
+  const bubbleStartingCurve = bubble.startingCurve;
+
   return `
         M 0 0
-        L ${navbar.width} 0
-        L ${navbar.width} ${navbar.width}
-        L ${navbar.width} ${startingPoint}
-        C ${navbar.width},
-        ${bubble.startingCurve + startingPoint} ${navbar.width + bubble.width},
-        ${bubble.height / 2 + startingPoint - bubble.middleCurve} ${
-    navbar.width + bubble.width
+        L ${navbarWidth} 0
+        L ${navbarWidth} ${navbarWidth}
+        L ${navbarWidth} ${startingPoint}
+        C ${navbarWidth},
+        ${bubbleStartingCurve + startingPoint} ${navbarWidth + bubbleWidth},
+        ${bubbleHeight / 2 + startingPoint - bubbleMiddleCurve} ${
+    navbarWidth + bubbleWidth
   },
-        ${bubble.height / 2 + startingPoint} ${navbar.width + bubble.width},
-        ${bubble.height / 2 + startingPoint + bubble.middleCurve} ${
-    navbar.width
-  },
-        ${startingPoint + bubble.height - bubble.startingCurve} ${navbar.width},
-        ${startingPoint + bubble.height}
-        L ${navbar.width} 300
-        L ${navbar.width} ${navbar.height}
-        L 0 ${navbar.height}
+        ${bubbleHeight / 2 + startingPoint} ${navbarWidth + bubbleWidth},
+        ${bubbleHeight / 2 + startingPoint + bubbleMiddleCurve} ${navbarWidth},
+        ${startingPoint + bubbleHeight - bubbleStartingCurve} ${navbarWidth},
+        ${startingPoint + bubbleHeight}
+        L ${navbarWidth} 300
+        L ${navbarWidth} ${navbarHeight}
+        L 0 ${navbarHeight}
         Z`;
 };
 
