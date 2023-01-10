@@ -66,3 +66,9 @@ p {
     opacity: 1;
   }
 }
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+  border-color: rgb(0, 0, 0);
+  border-radius: 0.55rem;
+}

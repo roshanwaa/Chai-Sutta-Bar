@@ -1,18 +1,27 @@
 import React from 'react';
+
+import { setBasePath } from 'https://cdn.skypack.dev/@shoelace-style/shoelace@2.0.0-beta.60/dist/utilities/base-path';
+import './home.css';
+
 import { SlCard } from 'https://cdn.skypack.dev/@shoelace-style/shoelace@2.0.0-beta.60/dist/react';
 
-import './home.css';
+setBasePath(
+  'https://cdn.skypack.dev/@shoelace-style/shoelace@2.0.0-beta.60/dist/'
+);
 
 export const Home = () => {
   return (
     <div className="view-layout">
-      <h2 className="title">
-        At <br /> Chai Sutta Bar
-      </h2>
-
-      <h2>What We Strive for...</h2>
+      <header class="under-container">
+        <h1 className="card-title">At</h1>
+        <h1 className="card-title">
+          Chai <span> Sutta </span>
+          <span>Bar</span>
+        </h1>
+      </header>
+      <h2 className="card-subTitle">What We Strive for...</h2>
       <div className="box-placeholder">
-        <p>
+        <p className="sub-para-usp">
           CSB Rajendra Nagar provides a soothing counterpoint to the stresses of
           urban living. At Chai Sutta Bar, our service is always centered around
           people. We believe and understand that the whole being of humankind
@@ -32,45 +41,45 @@ export const Home = () => {
             <h4>Brewing Goodness</h4>
           </div>
           <div className="content-usp">
-            <SlCard className="box-placeholder-usp small">
+            <SlCard className="box-placeholder-usp">
               <h3>Great Ambience</h3>
               <p>We aim to serve tea in a non-smoking bar-like setting.</p>
             </SlCard>
-            <div className="box-placeholder-usp">
+            <SlCard className="box-placeholder-usp">
               <h3>Pocket-Friendly</h3>
               <p>
                 Everyone loves chai and giving them the option to afford a
                 kulhad chai, makes us happy all the time.
               </p>
-            </div>
-            <div className="box-placeholder-usp">
+            </SlCard>
+            <SlCard className="box-placeholder-usp">
               <h3>Made with love menu</h3>
               <p>
                 Our menu has varieties of most loved food item's and beverages
                 that satiate both taste and appetite.
               </p>
-            </div>
-            <div className="box-placeholder-usp">
+            </SlCard>
+            <SlCard className="box-placeholder-usp">
               <h3>Eco-Friendly</h3>
               <p>
                 we serve our beverages in kulhad which are much more
                 eco-friendly than plastics or other alternatives.
               </p>
-            </div>
-            <div className="box-placeholder-usp">
+            </SlCard>
+            <SlCard className="box-placeholder-usp">
               <h3>Orphan Employment</h3>
               <p>
                 We believe in serving society by allowing bringing the potential
                 of the less fortunate in front of the world.
               </p>
-            </div>
-            <div className="box-placeholder-usp">
+            </SlCard>
+            <SlCard className="box-placeholder-usp">
               <h3>No-Smoking</h3>
               <p>
                 We aim to provide people, especially the youth to enjoy
-                eco-friendly 'kulhad chai breaks' rather than ' sutta breaks'.
+                eco-friendly 'kulhad chai breaks' rather than 'sutta breaks'.
               </p>
-            </div>
+            </SlCard>
           </div>
         </div>
       </div>
