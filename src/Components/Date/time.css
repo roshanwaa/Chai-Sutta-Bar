@@ -1,0 +1,10 @@
+.time {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-shadow: 2px 2px 2px rgb(0 0 0 / 10%);
+}

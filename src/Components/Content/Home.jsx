@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Time from '../Date/Time';
+
 import { setBasePath } from 'https://cdn.skypack.dev/@shoelace-style/shoelace@2.0.0-beta.60/dist/utilities/base-path';
 import './home.css';
 
@@ -12,12 +14,14 @@ setBasePath(
 export const Home = () => {
   return (
     <div className="view-layout">
-      <header class="under-container">
+      <header className="under-container">
         <h1 className="card-title">At</h1>
         <h1 className="card-title">
           Chai <span> Sutta </span>
-          <span>Bar</span>
+          Bar
         </h1>
+
+        <Time />
       </header>
       <h2 className="card-subTitle">What We Strive for...</h2>
       <div className="box-placeholder">
