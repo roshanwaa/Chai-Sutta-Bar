@@ -5,15 +5,23 @@
   margin-top: 15px;
   padding-top: 5px;
 }
+.menu-section {
+  transform: translateY(-10px);
+  animation: titleAnimation 0.5s forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
 
 .restaurant-card {
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
   cursor: pointer;
-  height: 14vw;
-  max-height: 240px;
+  height: 20vw;
+  max-height: 300px;
   position: relative;
   transition: transform 250ms;
+  width: 30%;
 }
 
 .menu-section-content {

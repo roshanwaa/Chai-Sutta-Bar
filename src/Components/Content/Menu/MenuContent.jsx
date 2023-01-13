@@ -14,7 +14,7 @@ export const MenuContent = () => {
         desc: 'Hot Coffee',
         id: 2,
         image:
-          'https://images.unsplash.com/photo-1633453919034-8ae660f7dbec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+          'https://images.unsplash.com/photo-1588652737648-640758421c3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
         title: 'Hot Coffee',
       },
       {
@@ -47,17 +47,66 @@ export const MenuContent = () => {
       },
       {
         desc: 'The best burgers in town',
-        id: 6,
+        id: 7,
         image:
           'https://images.unsplash.com/photo-1583331030528-5ae1c7fb81ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
         title: 'Pasta',
       },
       {
         desc: 'The best burgers in town',
-        id: 7,
+        id: 8,
         image:
           'https://images.unsplash.com/photo-1602833280958-1657662ccc58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
         title: 'Maggie',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 9,
+        image:
+          'https://images.unsplash.com/photo-1515467529252-d8f02a46e731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80',
+        title: 'Bites',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 10,
+        image:
+          'https://c.ndtvimg.com/2022-03/ctj2ujv8_corns_625x300_29_March_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350',
+        title: 'Healthy Feast ',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 11,
+        image:
+          'https://images.unsplash.com/photo-1496767849887-3d30e6d3e860?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        title: 'Milk Shakes',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 12,
+        image:
+          'https://images.unsplash.com/photo-1506624852095-49f2f713e1dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        title: 'Mojito',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 13,
+        image:
+          'https://images.unsplash.com/photo-1574571791847-06514225b338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=862&q=80',
+        title: 'Masala Lemon',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 14,
+        image:
+          'https://images.unsplash.com/photo-1634641135604-94df2bd6d3d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=748&q=80',
+        title: 'Ice Tea',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 15,
+        image:
+          'https://images.unsplash.com/photo-1457518919282-b199744eefd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80',
+        title: 'Ice Crusher',
       },
     ].map((restaurant) => {
       const styles = {

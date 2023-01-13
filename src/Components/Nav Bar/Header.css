@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row nowrap;
   width: 95%;
-  height: 90%;
+  height: 95%;
   max-width: auto;
   max-height: auto;
   min-height: 100px;
@@ -19,7 +19,7 @@
 }
 
 .scroll {
-  height: 0.5em;
+  height: 0.1em;
   width: 0%;
   background: #f44645;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15), 2px 4px 8px rgba(0, 0, 0, 0.15);
