@@ -15,7 +15,6 @@
 .card-title:hover {
   transition-duration: 0.4s;
   color: #7a3e06;
-  /* font-size: 9vw; */
 }
 .card-subTitle {
   font-family: 'Sucrose Bold Two';
@@ -27,14 +26,23 @@
   font-weight: bold;
 }
 .box-placeholder-usp {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.493);
+  cursor: pointer;
+  text-align: center;
   max-width: 500px;
   margin: 2rem;
-  background-color: #ebacac;
+  background-color: #ff5c5cee;
   border-radius: 1rem;
   padding: 1rem 2rem;
   grid-template-columns: 1fr max-content;
   column-gap: 3rem;
   color: black;
+}
+
+.box-placeholder-usp:hover {
+  transform: translateY(-5px);
+  max-height: auto;
+  transition: transform 0.4s;
 }
 
 .head-usp {
@@ -44,4 +52,5 @@
 h3,
 p {
   margin: 10px;
+  font-size: 18px;
 }

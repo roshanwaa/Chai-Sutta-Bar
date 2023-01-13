@@ -1,0 +1,149 @@
+.menu-section-content {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 1em;
+  margin-top: 15px;
+  padding-top: 5px;
+}
+
+.restaurant-card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+  cursor: pointer;
+  height: 14vw;
+  max-height: 240px;
+  position: relative;
+  transition: transform 250ms;
+}
+
+.menu-section-content {
+  display: flex;
+  gap: 4rem;
+}
+.restaurant-card:hover {
+  transform: translateY(-6px);
+  transition: transform 0.2s;
+}
+
+.restaurant-card-content-items {
+  margin-bottom: 30px;
+}
+
+.menu-section-content {
+  margin-top: 15px;
+  padding-top: 5px;
+}
+
+.restaurant-card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.restaurant-card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+  cursor: pointer;
+  height: 20vw;
+  max-height: 300px;
+  position: relative;
+  transition: transform 250ms;
+  width: 30%;
+}
+
+.restaurant-card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.restaurant-card-desc {
+  color: #d9ff00c4;
+}
+
+.restaurant-card-title {
+  color: whitesmoke;
+  font-size: 2em;
+}
+
+.restaurant-card-content-items {
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+  transition: margin 500ms;
+}
+.icon-chai {
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+.menu-section-title {
+  align-items: center;
+  display: flex;
+}
+
+.menu-section-title-text {
+  color: rgba(0, 0, 0, 0.973);
+  font-family: 'Rubik', sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1300px) {
+  .restaurant-card {
+    height: 30vw;
+    max-height: 300px;
+    position: relative;
+    width: calc(50% - 0.5em);
+  }
+
+  .menu-section-content {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-section-content {
+    flex-direction: column;
+  }
+
+  .restaurant-card {
+    height: 40vw;
+    position: relative;
+    width: 100%;
+  }
+  .icon-chai {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .menu-section-title-text {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+}
+@media (max-width: 400px) {
+  #app
+    #app-menu
+    #app-menu-content-wrapper
+    #app-menu-content
+    #tools-section
+    .menu-section-content {
+    flex-wrap: wrap;
+  }
+  #app-menu-content,
+  .menu-section-content {
+    width: 100%;
+  }
+}

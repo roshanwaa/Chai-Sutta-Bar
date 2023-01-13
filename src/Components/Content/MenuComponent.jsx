@@ -1,13 +1,19 @@
-import React from 'react';
+import { createElement } from 'react';
+import { MenuContent } from './Menu/MenuContent';
+import './Menu.css';
 
 export const MenuComponent = () => {
-  return (
-    <div className="view-layout">
-      <h2 className="title">Menu</h2>
-      <div className="box-placeholder small"></div>
-      <div className="box-placeholder"></div>
-      <div className="box-placeholder"></div>
-      <div className="box-placeholder"></div>
-    </div>
+  return createElement(
+    'div',
+    { id: 'app-menu', className: 'view-layout' },
+    createElement(
+      'div',
+      { id: 'app-menu-content-wrapper' },
+      createElement(
+        'div',
+        { id: 'app-menu-content' },
+        createElement(MenuContent, null)
+      )
+    )
   );
 };

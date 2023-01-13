@@ -1,0 +1,104 @@
+import { createElement } from 'react';
+import { MenuSection } from './MenuSection';
+export const MenuContent = () => {
+  const getRestaurants = () => {
+    return [
+      {
+        desc: 'Cuddle the Kulhad',
+        id: 1,
+        image:
+          'https://images.unsplash.com/photo-1623671100816-fa8bc447e37c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM5fHxjaGFpJTIwdGVhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        title: 'Chai',
+      },
+      {
+        desc: 'Hot Coffee',
+        id: 2,
+        image:
+          'https://images.unsplash.com/photo-1633453919034-8ae660f7dbec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        title: 'Hot Coffee',
+      },
+      {
+        desc: 'Cold Coffee',
+        id: 3,
+        image:
+          'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80',
+        title: 'Cold Coffee',
+      },
+      {
+        desc: "This 'Za be gettin down",
+        id: 4,
+        image:
+          'https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        title: 'Pizza',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 5,
+        image:
+          'https://images.unsplash.com/photo-1606131731446-5568d87113aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        title: 'Burgers',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 6,
+        image:
+          'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
+        title: 'Sandwiches',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 6,
+        image:
+          'https://images.unsplash.com/photo-1583331030528-5ae1c7fb81ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        title: 'Pasta',
+      },
+      {
+        desc: 'The best burgers in town',
+        id: 7,
+        image:
+          'https://images.unsplash.com/photo-1602833280958-1657662ccc58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
+        title: 'Maggie',
+      },
+    ].map((restaurant) => {
+      const styles = {
+        backgroundImage: `url(${restaurant.image})`,
+      };
+      return createElement(
+        'div',
+        {
+          key: restaurant.id,
+          className: 'restaurant-card background-image',
+          style: styles,
+        },
+        createElement(
+          'div',
+          { className: 'restaurant-card-content' },
+          createElement(
+            'div',
+            { className: 'restaurant-card-content-items' },
+            createElement(
+              'span',
+              { className: 'restaurant-card-title' },
+              restaurant.title
+            ),
+            createElement(
+              'span',
+              { className: 'restaurant-card-desc' },
+              restaurant.desc
+            )
+          )
+        )
+      );
+    });
+  };
+
+  return createElement(
+    MenuSection,
+    {
+      icon: 'icon-chai fa-solid fa-mug-hot',
+      id: 'restaurants-section',
+      title: 'Menu',
+    },
+    getRestaurants()
+  );
+};

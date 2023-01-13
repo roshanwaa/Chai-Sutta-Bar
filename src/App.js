@@ -1,6 +1,8 @@
 import { Header } from './Components/Nav Bar/Header';
 import './App.css';
 
+// const AppContext = React.createContext(null);
+
 function App() {
   return (
     <>
