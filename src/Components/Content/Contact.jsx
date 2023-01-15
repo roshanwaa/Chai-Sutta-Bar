@@ -22,10 +22,12 @@ export const Contact = () => {
         </div>
       </div>
       <div className="box-placeholder">
-        <p className={classes.contact__para}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h3 className={classes.contact__para}>
+          <i class="fa-sharp fa-solid fa-location-dot" /> Address: 149/B,
+          Chandra Kutir,
+          <br />
+          Arya Kumar road ,Rajendra Nagar, Patna - 800016
+        </h3>
       </div>
       <div className="box-placeholder">
         <div className={classes['contact-map']}>
