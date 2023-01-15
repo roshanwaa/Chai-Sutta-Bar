@@ -76,10 +76,10 @@
 
 .icon {
   position: relative;
-  background: #b6b0b0c7;
+  background: #d4d4d4c7;
   border-radius: 50%;
-  padding: 15px;
-  margin: 10px;
+  padding: 5px;
+  margin: 20px;
   width: 50px;
   height: 50px;
   font-size: 35px;
@@ -186,6 +186,12 @@
     font-size: 2rem;
     margin-right: 1rem;
   }
+  .icon {
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+  }
   #contact h2 {
     font-size: 2rem;
   }
@@ -194,5 +200,11 @@
   #contact h2 {
     width: auto;
     /* font-size: 1rem; */
+  }
+  .icon {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
   }
 }
