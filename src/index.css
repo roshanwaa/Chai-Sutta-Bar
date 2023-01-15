@@ -16,17 +16,6 @@ a {
   text-decoration: inherit;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-  font-family: 'Raleway', sans-serif;
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
-}
 .view-layout {
   overflow-y: scroll;
   width: 100%;
@@ -47,15 +36,14 @@ p {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
-  border-radius: 10px;
-  background: #ededed;
+  border-radius: 14px;
+  background: #dad9d98f;
   opacity: 0;
   transform: translateY(-10px);
   animation: titleAnimation 0.5s forwards;
   animation-timing-function: ease-in-out;
   animation-delay: 0.3s;
 }
-
 .small {
   height: 40px;
 }

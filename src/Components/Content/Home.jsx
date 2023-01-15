@@ -14,7 +14,7 @@ setBasePath(
 export const Home = () => {
   return (
     <div className="view-layout">
-      <header className="under-container">
+      <header className="under-container title">
         <h1 className="card-title">At</h1>
         <h1 className="card-title">
           Chai <span> Sutta </span>
@@ -23,7 +23,9 @@ export const Home = () => {
 
         <Time />
       </header>
-      <h2 className="card-subTitle">What We Strive for...</h2>
+      <div className="box-placeholder">
+        <h2 className="head-usp card-subTitle">What We Strive for...</h2>
+      </div>
       <div className="box-placeholder">
         <p className="sub-para-usp">
           CSB Rajendra Nagar provides a soothing counterpoint to the stresses of
@@ -39,11 +41,13 @@ export const Home = () => {
         </p>
       </div>
       <div className="box-placeholder">
+        <div className="head-usp">
+          <h2 className="card-subTitle">Our USP's</h2>
+          <h4>Brewing Goodness</h4>
+        </div>
+      </div>
+      <div className="box-placeholder">
         <div className="usp">
-          <div className="head-usp">
-            <h2>Our USP's</h2>
-            <h4>Brewing Goodness</h4>
-          </div>
           <div className="content-usp">
             <SlCard className="box-placeholder-usp">
               <h3>Great Ambience</h3>
