@@ -24,7 +24,7 @@
 .app_form_control:focus {
   border-bottom-color: #4d71e6;
   transition: 0.5s;
-  margin-top: 6px;
+  margin-top: 12px;
   outline: none;
   /* border-color: #000000; */
   border-radius: 4 px;

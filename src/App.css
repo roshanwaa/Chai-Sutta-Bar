@@ -85,8 +85,7 @@
 .invalid input {
   outline: none;
   border: none;
-  border-bottom: 4px solid #5c1919;
-  margin-top: 5px;
+  border-bottom: 4px solid #850404;
 }
 
 label {
@@ -95,9 +94,11 @@ label {
 }
 
 .invalid input:focus {
-  border-color: #e62316;
+  margin-top: 12px;
+  transition: 0.5s;
+  border-color: #c01206;
 }
 
 .error-text {
-  color: #ee4747;
+  color: #850404;
 }
