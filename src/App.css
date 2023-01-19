@@ -2,6 +2,7 @@
 
 .main__title,
 .csb-logo {
+  /* margin: 10px; */
   font-family: 'Moon Dance', cursive;
 }
 
@@ -12,8 +13,32 @@
   min-height: fit-content;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #ff5e62, #ff9966);
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    #65005e 3%,
+    #3c84ce 38%,
+    #30eee2 68%,
+    #e46060 98%,
+    #39ccf18a 58%
+  );
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 .main-header {
   display: flex;
   justify-content: center;
@@ -37,6 +62,42 @@
   padding-left: 5px;
   font-weight: bold;
   padding-top: 10px;
-  color: #674747;
+  color: #000000;
   font-size: 15px;
+}
+
+.form-control,
+.textarea {
+  margin-bottom: 2rem;
+}
+
+.textarea {
+  font-size: 1rem;
+  min-height: 4em;
+  font-family: 'Inter', sans-serif;
+}
+
+.textarea::placeholder {
+  color: rgba(63, 63, 63, 0.548);
+  font-size: 1.1rem;
+}
+
+.invalid input {
+  outline: none;
+  border: none;
+  border-bottom: 4px solid #5c1919;
+  margin-top: 5px;
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.invalid input:focus {
+  border-color: #e62316;
+}
+
+.error-text {
+  color: #ee4747;
 }

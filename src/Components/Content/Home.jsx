@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Time from '../Date/Time';
+import Time from './Assets/Date/Time';
 
 import { setBasePath } from 'https://cdn.skypack.dev/@shoelace-style/shoelace@2.0.0-beta.60/dist/utilities/base-path';
-import './home.css';
+import './CSS/home.css';
 
 import { SlCard } from 'https://cdn.skypack.dev/@shoelace-style/shoelace@2.0.0-beta.60/dist/react';
 

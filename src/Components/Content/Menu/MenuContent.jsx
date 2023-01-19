@@ -1,5 +1,6 @@
 import { createElement } from 'react';
 import { MenuSection } from './MenuSection';
+
 export const MenuContent = () => {
   const getRestaurants = () => {
     return [

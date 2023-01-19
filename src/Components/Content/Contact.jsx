@@ -3,10 +3,9 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/style-prop-object */
 import React from 'react';
-import classes from './Contact.module.css';
-// import Row from 'react-bootstrap/Row';
 
-// import Container from 'react-bootstrap/Container';
+import classes from './CSS/Contact.module.css';
+import { ContactForm } from './Assets/FormContact/ContactForm';
 
 export const Contact = () => {
   return (
@@ -23,8 +22,8 @@ export const Contact = () => {
       </div>
       <div className="box-placeholder">
         <h3 className={classes.contact__para}>
-          <i class="fa-sharp fa-solid fa-location-dot" /> Address: 149/B,
-          Chandra Kutir,
+          <i className="fa-solid fa-location-arrow"></i> We Welcome you all to
+          visit
           <br />
           Arya Kumar road ,Rajendra Nagar, Patna - 800016
         </h3>
@@ -47,7 +46,7 @@ export const Contact = () => {
               href="https://www.facebook.com/CSB.RajendraNagar/"
               target="_blank"
             >
-              <i class="fa-brands fa-facebook-f"></i>
+              <i className="fa-brands fa-facebook-f"></i>
             </a>
           </li>
 
@@ -57,29 +56,37 @@ export const Contact = () => {
               href="https://instagram.com/csb_rajendranagar?igshid=YmMyMTA2M2Y="
               target="_blank"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </li>
 
           <li className={`${classes.map} ${classes.icon}`}>
             <a className={classes.tooltip}>Map</a>
             <a href="https://goo.gl/maps/n9wMHremz8yMdJK86" target="_blank">
-              <i class="fa-solid fa-location-dot"></i>
+              <i className="fa-solid fa-location-dot"></i>
             </a>
           </li>
+
           <li className={`${classes.whatApp} ${classes.icon}`}>
             <a className={classes.tooltip}>WhatApp</a>
             <a
               href="https://api.whatsapp.com/send?phone=%2B919097355476&fbclid=IwAR10Xhggn19v_jVAuybsvcpHW2KDS1X-DHfY0TX_NCXAgZ0a5rOQynuIG3o"
               target="_blank"
             >
-              <i class="fa-brands fa-whatsapp"></i>
+              <i className="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+          <li className={`${classes.zomato} ${classes.icon}`}>
+            <a className={classes.tooltip}>Zomato</a>
+            <a href="http://zoma.to/r/20090402" target="_blank">
+              <i className="fa-solid fa-bowl-food"></i>
             </a>
           </li>
         </ul>
       </div>
+      <div className="box-placeholder">
+        <ContactForm />
+      </div>
     </div>
   );
 };
-
-// git commit -a -m "contact logo"

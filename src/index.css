@@ -15,11 +15,14 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+p {
+  font-family: 'Inter', sans-serif;
+}
 
 .view-layout {
   overflow-y: scroll;
   width: 100%;
-  margin: 20px 30px;
+  margin: 20px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +30,7 @@ a {
 .title {
   opacity: 0;
   transform: translateY(-10px);
-  animation: titleAnimation 0.3s forwards;
+  animation: titleAnimation 0.4s forwards;
   animation-timing-function: ease-in-out;
 }
 
@@ -37,15 +40,12 @@ a {
   height: auto;
   margin-bottom: 20px;
   border-radius: 14px;
-  background: #dad9d98f;
+  background: #e7dfdfb0;
   opacity: 0;
   transform: translateY(-10px);
   animation: titleAnimation 0.5s forwards;
   animation-timing-function: ease-in-out;
   animation-delay: 0.3s;
-}
-.small {
-  height: 40px;
 }
 
 @keyframes titleAnimation {
@@ -56,7 +56,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 0.2rem;
-  border-color: rgb(0, 0, 0);
+  width: 0.2px;
+  border-color: rgba(0, 0, 0, 0.678);
   border-radius: 0.55rem;
 }

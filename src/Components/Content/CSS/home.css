@@ -6,7 +6,7 @@
 
 .card-title {
   font-family: 'Sucrose Bold Two';
-  font-size: 10vw;
+  font-size: 9vw;
   line-height: 0.9;
   margin: 0;
   margin-bottom: 1rem;
@@ -25,6 +25,7 @@
   color: black;
   font-weight: bold;
 }
+
 .box-placeholder-usp {
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.493);
   cursor: pointer;
@@ -40,9 +41,11 @@
 }
 
 .box-placeholder-usp:hover {
+  background-color: rgb(82, 19, 19);
+  transition: 0.5s;
+  color: white;
   transform: translateY(-5px);
   max-height: auto;
-  transition: transform 0.4s;
 }
 
 .head-usp {

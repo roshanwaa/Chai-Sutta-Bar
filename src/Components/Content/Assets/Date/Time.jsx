@@ -21,4 +21,5 @@ const Time = () => {
   const date = useCurrentDateEffect();
   return createElement('span', { className: 'time' }, T.format(date));
 };
+
 export default Time;

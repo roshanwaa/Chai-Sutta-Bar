@@ -1,4 +1,4 @@
-import { Header } from './Components/Nav Bar/Header';
+import { Header } from './Components/NavBar/Header';
 import './App.css';
 
 // const AppContext = React.createContext(null);

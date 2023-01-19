@@ -1,6 +1,6 @@
 import { createElement } from 'react';
 import { MenuContent } from './Menu/MenuContent';
-import './Menu.css';
+import './CSS/Menu.css';
 
 export const MenuComponent = () => {
   return createElement(
