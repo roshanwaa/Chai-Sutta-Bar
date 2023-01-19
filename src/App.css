@@ -100,5 +100,6 @@ label {
 }
 
 .error-text {
+  margin: 12px 0;
   color: #850404;
 }

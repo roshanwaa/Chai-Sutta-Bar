@@ -27,8 +27,8 @@
   margin-top: 12px;
   outline: none;
   /* border-color: #000000; */
-  border-radius: 4 px;
-  background-color: #f1f1f19d;
+  border-radius: 4px;
+  background-color: #c0c0c0a4;
 }
 
 .app_form_control {
@@ -42,7 +42,6 @@
 
 .form__actions_Btn {
   transition: 0.5s;
-
   width: 10rem;
   margin-left: 1rem;
   font: inherit;
