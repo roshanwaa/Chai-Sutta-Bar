@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import * as dynamics from 'https://cdn.skypack.dev/dynamics.js@1.1.5';
+import * as dynamics from 'dynamics.js';
 import './Navbar.css';
 
 const navbarStyle = {

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css';
 import { BrowserRouter as HashRouter, Routes, Route } from 'react-router-dom';
 
 import { Navbar } from './Navbar';
@@ -7,6 +6,7 @@ import { Home } from '../Content/Home';
 import { MenuComponent } from '../Content/MenuComponent';
 import { About } from '../Content/About';
 import { Contact } from '../Content/Contact';
+import './Header.css';
 
 export const Header = () => {
   return (

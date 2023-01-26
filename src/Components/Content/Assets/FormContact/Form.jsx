@@ -1,4 +1,4 @@
-// import react from 'react';
+import React from 'react';
 import classes from '../../CSS/form.module.css';
 import { useInput } from '../Hooks/usrInput';
 
@@ -75,12 +75,7 @@ export const Form = () => {
 
   return (
     <>
-      <form
-        onSubmit={formSubmitHandler}
-        className={classes.form}
-        action="https://formsubmit.co/kumroshan120@gmail.com"
-        method="POST"
-      >
+      <form onSubmit={formSubmitHandler} className={classes.form}>
         {/* <div className={nameInputClasses}> */}
         <div className={nameInputClasses}>
           <label htmlFor="name">Name</label>
