@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Chai Sutta Bar",
   "main": "index.js",
-  "homepage": "https://github.com/roshanwaa/Chai-Sutta-Bar#readme",
+  "homepage": "https://github.com/roshanwaa/Chai-Sutta-Bar",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
