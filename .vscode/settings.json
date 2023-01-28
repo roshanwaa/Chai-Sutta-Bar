@@ -12,5 +12,6 @@
         "Rajendranagar",
         "referrerpolicy",
         "Zomato"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
